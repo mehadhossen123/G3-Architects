@@ -66,11 +66,11 @@ button:focus{
 }
 
 .banner-text{
-    max-width: 862px;
-    height: 225px;
+    max-width: 880px;
+    height: auto;
     margin: 0 auto;
     text-align: center;
-    margin-bottom: 150px;
+    margin-bottom: 50px;
     
 }
 .banner-title{
@@ -81,6 +81,7 @@ button:focus{
 }
 .banner-img{
     width: 100%;
+    height: auto;
 }
 /* Responsive header part  */
 @media screen and (max-width:576px){
