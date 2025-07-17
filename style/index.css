@@ -120,6 +120,42 @@ button:focus{
     font-weight: bold;
     color:#131313;
 }
+/* Responsice facts part  */
+.fact{
+    border: 1px solid #FF900E;
+    width: 240px;
+    height: 240px;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+.facts{
+    margin-top: 130px;
+}
+
+.fact-number{
+    font-size: 2.8rem;
+    font-weight:600;
+    margin-top: 5px;
+    margin-bottom:10px;
+
+}
+.fact-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    
+}
+.fact-title{
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-top: 10px;
+}
+.feature-para{
+    max-width: 540px;
+    margin-bottom: 100px;
+}
 
 
 
@@ -128,12 +164,13 @@ button:focus{
     .list,.nav-bar,.teams{
         flex-direction: column;
     }
-    .teams-img-container{
+    .teams-img-container,.fact-container{
         grid-template-columns: repeat(1,1fr);
     }
     .teams-description{
         margin-left: 20px;
     }
+
     
 }
 /* Responsive design for medium devices  */
