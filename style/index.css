@@ -12,6 +12,12 @@
 .display-flex{
     display: flex;
 }
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+    margin-top: 130px;
+}
+
 .dark-02{
 color: #424242;
 }
@@ -83,6 +89,40 @@ button:focus{
     width: 100%;
     height: auto;
 }
+
+/* Teams part design */
+.Quick-lst{
+   font-size: 3rem;
+   font-weight:700;
+}
+.teams{
+   
+    align-items: center;
+    
+}
+.teams-img-container{
+    display: grid;
+    grid-template-columns: repeat(2 ,1fr);
+    gap:24px;
+}
+.teams-description{
+    margin-left: 130px;
+    max-width: 537px;
+}
+
+.Features{
+    color: #FF900E;
+    font-weight: bold;
+    font-size: 3rem;
+}
+.of{
+    font-size: 3rem;
+    font-weight: bold;
+    color:#131313;
+}
+
+
+
 /* Responsive header part  */
 @media screen and (max-width:576px){
     .list,.nav-bar{
