@@ -150,7 +150,14 @@
 .gear-part{
     padding-left: 100px;
 }
-
+.foot{
+    background-color: rgba(6, 15, 68, 0.836);
+    max-width: 1440px;
+    padding: 100px;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+}
 
 /* Media screen responsive  part  */
 @media screen and (max-width:576px) {
@@ -186,7 +193,10 @@
   .gear{
     flex-direction: column-reverse;
     align-items: center;
-     gap:20px;
+    
+  }
+  .gear img{
+    margin-top: 20px;
   }
   
   
