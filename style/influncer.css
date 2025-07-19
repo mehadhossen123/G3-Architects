@@ -47,7 +47,7 @@
     background-repeat: no-repeat;
     background-size: 400px auto;
     background-position:  bottom right;
-    height: 500px;
+    min-height: 500px;
    max-width: 1440px;
    margin: 0 auto;
 
@@ -73,6 +73,9 @@
     font-size: 3.25rem;
     font-weight: bold;
 }
+.banner-img img{
+    width: 100%;
+}
 
 /* Shares classes here  */
 .gray{
@@ -83,4 +86,91 @@
 }
 .display{
     display: flex;
+}
+
+
+.main{
+    margin: 0 auto;
+    max-width: 1150px;
+    
+    padding: 40px 10px;
+}
+
+/* Main part style fo css  */
+.img-container{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+    padding: 20px 0;
+   
+}
+/* Card style */
+.card{
+    width: 329px;
+    height: 447px;
+    border-radius: 8px;
+    box-shadow: 0 0 30px 0 #000000;
+    padding: 15px;
+    margin-top: 20px;
+    text-align: center;
+}
+.card img{
+    width: 100%;
+}
+.img-abbu{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    
+    margin-top: 100px;
+}
+.card-container h1{
+    text-align: center;
+    margin-top: 30px;
+    
+
+}
+.card h3{
+    margin: 10px;
+}
+.card h4{
+    margin: 10px;
+}
+
+
+/* Media screen responsive  part  */
+@media screen and (max-width:576px) {
+    .banner-section{
+        flex-direction: column-reverse;
+        margin-bottom: 20px;
+    }
+    .navigation{
+        flex-direction: column;
+    }
+    .head {
+    background-position: center bottom;
+    background-size: 250px auto; 
+  }
+  .banner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap:10px;
+  }
+  .img-container{
+    grid-template-columns: repeat(2,1fr);
+     gap: 15px;
+      justify-items: center;
+      
+  }
+  .img-abbu{
+    grid-template-columns: repeat(1,1fr);
+    gap:20px;
+    align-items: center;
+  }
+  
+  
 }
