@@ -1,0 +1,96 @@
+* {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+/* reuseable class  */
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.btn {
+  border-radius: 5px;
+  background: linear-gradient(45deg, #ff6b6b, #f9ca24, #6ab04c, #2980b9);
+  padding: 10px 20px;
+  color: rgb(200, 11, 102);
+  border: none;
+  background-size: 200% 200%;
+  position: relative;
+  transition: background-position 2s ease;
+  cursor: pointer;
+}
+span {
+  font-weight: bold;
+}
+.btn:hover {
+  background-position: right center;
+}
+
+/* banner part style  */
+.banner {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  border-radius: 30px;
+  margin-bottom: 60px;
+}
+.banner-left h2 {
+  color: white;
+  font-size: 70px;
+  font-weight: 600;
+  line-height: 70px;
+}
+.banner-left p {
+  color: white;
+  max-width: 55%;
+}
+
+.banner-right img {
+  display: block;
+}
+.banner-left {
+  margin: 50px;
+}
+/* body part style here  */
+.up-comming-left {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  height: fit-content;
+  gap: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  width: 25%;
+}
+.upcomming-match {
+  display: flex;
+}
+.up-comming-right .card img {
+  border-radius: 10px 10px 0 0;
+  height: 150px;
+  width: 100%;
+}
+.up-comming-right {
+  flex: 1;
+  padding-left: 40px;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.up-comming-right button {
+  border: 2px solid black;
+  background-color: white;
+  padding: 8px 15px 8px 15px;
+  border-radius: 10px;
+}
+.box {
+  margin-left: 20px;
+}
+.bottom-icon {
+  display: flex;
+  gap: 50px;
+  color: rgba(22, 22, 22, 0.8);
+}
+.box p {
+  color: rgba(22, 22, 22, 1);
+  font-weight: bold;
+}
