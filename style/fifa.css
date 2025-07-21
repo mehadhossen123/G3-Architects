@@ -51,6 +51,22 @@ span {
   margin: 50px;
 }
 /* body part style here  */
+.btn-1,
+.btn-2 {
+  border-radius: 5px;
+
+  padding: 10px 20px;
+  color: rgba(11, 3, 7, 0.812);
+  border: none;
+  background-color: white;
+
+  cursor: pointer;
+}
+.btn-1,
+.btn-2:focus {
+  border: 2px solid red;
+}
+
 .up-comming-left {
   display: flex;
   flex-direction: column;
@@ -59,7 +75,6 @@ span {
   gap: 20px;
   padding: 20px;
   border-radius: 10px;
-  width: 25%;
 }
 .upcomming-match {
   display: flex;
@@ -75,6 +90,7 @@ span {
   border-radius: 10px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
 }
 .up-comming-right button {
   border: 2px solid black;
@@ -93,4 +109,66 @@ span {
 .box p {
   color: rgba(22, 22, 22, 1);
   font-weight: bold;
+}
+.card {
+  background-color: aliceblue;
+}
+
+/* footer part style */
+.foot {
+  width: 1440px;
+  height: 444px;
+  background-color: rgba(22, 22, 22, 1);
+  gap: 100px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+.foot h2 {
+  color: white;
+}
+.footer-ancor li {
+  list-style-type: none;
+}
+ul li a {
+  color: rgba(185, 185, 185, 1);
+  text-decoration: none;
+  display: flex;
+}
+.footer-ancor ul {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+.foot h2 {
+  text-align: center;
+  padding-top: 100px;
+}
+/* start responsive part here  */
+@media screen and (max-width: 768px) {
+  .up-comming-left {
+    flex-direction: row;
+    background-color: transparent;
+
+    width: 100%;
+  }
+  .up-comming-left > * {
+    flex: 1;
+  }
+  .upcomming-match {
+    flex-direction: column;
+  }
+  .up-comming-right {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .foot {
+    width: 100%;
+  }
+  .footer-ancor ul {
+    flex-direction: column;
+    padding-bottom: 50px;
+  }
+  .banner {
+    flex-direction: column;
+  }
 }
